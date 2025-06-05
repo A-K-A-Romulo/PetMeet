@@ -5,86 +5,96 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1587AB"
-    tools:context=".MainActivity">
+    android:background="#1586AA"
+    tools:context=".TelaActivity2">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitEnd"
-        app:srcCompat="@drawable/doogcaat" />
+        app:srcCompat="@drawable/doogcaat"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/funcionalidades"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#1AFFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/top6"
+            app:layout_constraintEnd_toStartOf="@+id/r2"
+            app:layout_constraintStart_toStartOf="@+id/l2"
+            app:layout_constraintTop_toTopOf="@+id/topimg3"
+            app:srcCompat="@drawable/logopet" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/top2"
+            android:id="@+id/top5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.5" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/L"
+            android:id="@+id/l2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.2" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/R"
+            android:id="@+id/r2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.8" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/top"
+            android:id="@+id/top6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.2" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/botton"
+            android:id="@+id/botton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.95" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/topimg"
+            android:id="@+id/topimg3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.05" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_bold"
-            android:text="Login"
+            android:text="Criar Conta"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="34sp"
-            app:layout_constraintEnd_toStartOf="@+id/R"
-            app:layout_constraintStart_toStartOf="@+id/L"
-            app:layout_constraintTop_toBottomOf="@id/top" />
+            app:layout_constraintEnd_toStartOf="@+id/r2"
+            app:layout_constraintStart_toStartOf="@+id/l2"
+            app:layout_constraintTop_toTopOf="@+id/top6" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/editTextTextEmailAddress3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/backgroundlabel"
             android:ems="10"
             android:fontFamily="@font/inter_medium"
@@ -93,15 +103,15 @@
             android:padding="10dp"
             android:textSize="16sp"
             app:cornerRadius="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/R"
-            app:layout_constraintStart_toStartOf="@+id/L"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
+            app:layout_constraintEnd_toStartOf="@+id/r2"
+            app:layout_constraintStart_toStartOf="@+id/l2" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/editTextTextPassword3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/backgroundlabel"
             android:ems="10"
             android:fontFamily="@font/inter_medium"
@@ -109,49 +119,38 @@
             android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/R"
-            app:layout_constraintStart_toStartOf="@+id/L"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword4"
+            app:layout_constraintEnd_toStartOf="@+id/r2"
+            app:layout_constraintStart_toStartOf="@+id/l2" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundlabel"
+            android:ems="10"
+            android:fontFamily="@font/inter_medium"
+            android:hint="Confirme sua Senha"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/top5"
+            app:layout_constraintEnd_toStartOf="@+id/r2"
+            app:layout_constraintStart_toStartOf="@+id/l2" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:backgroundTint="#285B66"
             android:fontFamily="@font/inter_bold"
-            android:text="Login"
+            android:text="Criar"
             android:textSize="20sp"
             app:cornerRadius="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/botton"
-            app:layout_constraintEnd_toStartOf="@+id/R"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/L" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/inter_bold"
-            android:text="Não tem uma conta? Criar"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/R"
-            app:layout_constraintStart_toStartOf="@+id/L"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/top"
-            app:layout_constraintEnd_toStartOf="@+id/R"
-            app:layout_constraintStart_toStartOf="@+id/L"
-            app:layout_constraintTop_toTopOf="@+id/topimg"
-            app:srcCompat="@drawable/logopet" />
-
+            app:layout_constraintBottom_toTopOf="@+id/botton3"
+            app:layout_constraintEnd_toStartOf="@+id/r2"
+            app:layout_constraintStart_toStartOf="@+id/l2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
