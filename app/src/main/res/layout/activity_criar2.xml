@@ -10,11 +10,13 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -23,12 +25,328 @@
             tools:layout_editor_absoluteY="1dp">
 
             <Button
+                android:id="@+id/button15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="Médio"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/r3"
+                app:layout_constraintStart_toStartOf="@+id/l"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#AB1540"
+                android:fontFamily="@font/inter_bold"
+                android:text="Não"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/r3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/l"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="Casa"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/l"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="Pequeno"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/l"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="Sim"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/l"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#114B30"
+                android:fontFamily="@font/inter_bold"
+                android:text="Enviar"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/botton4"
+                app:layout_constraintEnd_toStartOf="@+id/r3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/l3" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="Grande"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/l"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="Apartamento"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/r3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/l"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="4 ou menos"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/l"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="8 a 12 horas"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/l"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="12 ou mais"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/r3"
+                app:layout_constraintStart_toStartOf="@+id/l"
+                app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="4 a 8 horas"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/r3"
+                app:layout_constraintStart_toStartOf="@+id/l"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#274B56"
+                android:fontFamily="@font/inter_bold"
+                android:text="Sim"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/top3"
+                app:layout_constraintEnd_toStartOf="@+id/l"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#AB1540"
+                android:fontFamily="@font/inter_bold"
+                android:text="Não"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/top3"
+                app:layout_constraintEnd_toStartOf="@+id/r3"
+                app:layout_constraintStart_toStartOf="@+id/l"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Você é um Protetor?"
+
+                android:textAlignment="center"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toTopOf="@+id/top7" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+
+                android:fontFamily="@font/inter_bold"
+                android:text="Quantas horas por dia você passa em casa?"
+                android:textAlignment="center"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/r3"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toTopOf="@+id/top3" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Qual a sua ocupação?"
+                android:textAlignment="center"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toTopOf="@+id/top4" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Você mora em:"
+                android:textAlignment="center"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toTopOf="@+id/top9" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Espaço disponível em sua residência"
+                android:textAlignment="center"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toTopOf="@+id/top10" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Você tem outros pets?"
+                android:textAlignment="center"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toTopOf="@+id/botton2" />
+
+            <Button
                 android:id="@+id/button2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:backgroundTint="#CC285B66"
+                android:backgroundTint="#274B56"
                 android:fontFamily="@font/inter_bold"
                 android:text="Feminino"
                 android:textSize="20sp"
@@ -44,7 +362,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:backgroundTint="#CC275862"
+                android:backgroundTint="#274B56"
                 android:fontFamily="@font/inter_bold"
                 android:text="Masculino"
                 android:textSize="20sp"
@@ -69,7 +387,7 @@
                 app:cornerRadius="10dp"
                 app:layout_constraintEnd_toStartOf="@+id/r3"
                 app:layout_constraintStart_toStartOf="@+id/l3"
-                tools:layout_editor_absoluteY="230dp" />
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <EditText
                 android:id="@+id/editTextTextEmailAddress4"
@@ -128,6 +446,25 @@
                 app:layout_constraintStart_toStartOf="@+id/l3"
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress5" />
 
+            <EditText
+                android:id="@+id/editTextTextEmailAddress7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backgroundlabel"
+                android:backgroundTint="#ededed"
+                android:ems="10"
+                android:fontFamily="@font/inter_medium"
+                android:hint="Ocupação"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textSize="14sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/r3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/l3"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="0dp"
@@ -147,7 +484,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.53" />
+                app:layout_constraintGuide_percent="0.41" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/top3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.47" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/top4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.58" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/top9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/top10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.72" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/l3"
@@ -182,7 +547,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.95" />
+                app:layout_constraintGuide_percent="0.98" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/botton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.83" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/topimg4"
@@ -190,14 +562,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintGuide_percent="0.05" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="142dp"
-                tools:layout_editor_absoluteY="789dp"
-                tools:srcCompat="@tools:sample/avatars" />
 
             <ImageView
                 android:id="@+id/imageView8"
