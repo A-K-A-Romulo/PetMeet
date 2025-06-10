@@ -13,11 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitEnd"
-        app:srcCompat="@drawable/doogcaat"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doogcaat" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#1AFFFFFF"
@@ -91,7 +93,7 @@
             app:layout_constraintTop_toTopOf="@+id/top6" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress3"
+            android:id="@+id/edtEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -100,15 +102,16 @@
             android:fontFamily="@font/inter_medium"
             android:hint="Digite seu E-mail"
             android:inputType="textEmailAddress"
+            android:minHeight="48dp"
             android:padding="10dp"
             android:textSize="16sp"
             app:cornerRadius="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
+            app:layout_constraintBottom_toTopOf="@+id/edtCriarSenha1"
             app:layout_constraintEnd_toStartOf="@+id/r2"
             app:layout_constraintStart_toStartOf="@+id/l2" />
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/edtCriarSenha1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -117,14 +120,15 @@
             android:fontFamily="@font/inter_medium"
             android:hint="Digite sua Senha"
             android:inputType="textPassword"
+            android:minHeight="48dp"
             android:padding="10dp"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword4"
+            app:layout_constraintBottom_toTopOf="@+id/edtCriarSenha2"
             app:layout_constraintEnd_toStartOf="@+id/r2"
             app:layout_constraintStart_toStartOf="@+id/l2" />
 
         <EditText
-            android:id="@+id/editTextTextPassword4"
+            android:id="@+id/edtCriarSenha2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/backgroundlabel"
@@ -132,6 +136,7 @@
             android:fontFamily="@font/inter_medium"
             android:hint="Confirme sua Senha"
             android:inputType="textPassword"
+            android:minHeight="48dp"
             android:padding="10dp"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/top5"
@@ -139,7 +144,7 @@
             app:layout_constraintStart_toStartOf="@+id/l2" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnCriar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -147,10 +152,12 @@
             android:backgroundTint="#285B66"
             android:fontFamily="@font/inter_bold"
             android:text="Criar"
+            android:onClick="cadastrar"
             android:textSize="20sp"
             app:cornerRadius="10dp"
             app:layout_constraintBottom_toTopOf="@+id/botton3"
             app:layout_constraintEnd_toStartOf="@+id/r2"
             app:layout_constraintStart_toStartOf="@+id/l2" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

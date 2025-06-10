@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1034740964643",
+    "project_id": "petmeet-5af5e",
+    "storage_bucket": "petmeet-5af5e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034740964643:android:f705f9008ed1fe6e264096",
+        "android_client_info": {
+          "package_name": "com.example.petmeet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb9sl45wlafcyS3nFGBS2FwSxJZCJM78I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

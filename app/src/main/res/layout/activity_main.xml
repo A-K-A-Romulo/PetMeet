@@ -13,6 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/doogcaat" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +27,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView">
+        app:layout_constraintTop_toTopOf="@+id/imageView3">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/top2"
@@ -81,7 +85,7 @@
             app:layout_constraintTop_toBottomOf="@id/top" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/edtEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -90,6 +94,7 @@
             android:fontFamily="@font/inter_medium"
             android:hint="Digite seu E-mail"
             android:inputType="textEmailAddress"
+            android:minHeight="48dp"
             android:padding="10dp"
             android:textSize="16sp"
             app:cornerRadius="10dp"
@@ -98,7 +103,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/edtSenha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -107,14 +112,15 @@
             android:fontFamily="@font/inter_medium"
             android:hint="Digite sua Senha"
             android:inputType="textPassword"
+            android:minHeight="48dp"
             android:padding="10dp"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/R"
             app:layout_constraintStart_toStartOf="@+id/L"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnLogin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -122,6 +128,7 @@
             android:backgroundTint="#285B66"
             android:fontFamily="@font/inter_bold"
             android:text="Login"
+            android:onClick="logar"
             android:textSize="20sp"
             app:cornerRadius="10dp"
             app:layout_constraintBottom_toTopOf="@+id/botton"
@@ -130,17 +137,18 @@
             app:layout_constraintStart_toStartOf="@+id/L" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txtCriar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/inter_bold"
             android:text="Não tem uma conta? Criar"
+            android:onClick="cadastro"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/R"
             app:layout_constraintStart_toStartOf="@+id/L"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
 
         <ImageView
             android:id="@+id/imageView2"
